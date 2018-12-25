@@ -12,7 +12,7 @@ group 'com.salvadormontiel'
 
 jar {
     baseName = 'dotenv'
-    version '0.0.1'
+    version '0.0.2'
 }
 
 sourceCompatibility = 1.8
