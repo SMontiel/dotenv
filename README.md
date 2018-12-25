@@ -1,5 +1,7 @@
 # dotenv
 
+[![](https://jitpack.io/v/com.salvadormontiel/dotenv.svg)](https://jitpack.io/#com.salvadormontiel/dotenv)
+
 **dotenv** is a Java library that loads environment variables from a `.env` file. Storing configuration in the environment separate from code is based on [The Twelve-Factor App](http://12factor.net/config) methodology.
 
 Environment variables listed in the host environment override those in `.env` file.  
@@ -7,6 +9,29 @@ Environment variables listed in the host environment override those in `.env` fi
 Use `DotEnv.get("...")` instead of Java's `System.getenv("...")`.  
 
 > Since Java does not provide a way to set environment variables on a currently running process, vars listed in `.env` cannot be set and thus cannot be retrieved using `System.getenv("...")`.
+
+## Install
+
+**Step 1.** Add the JitPack repository to your build file
+
+Add it in your root `build.gradle` at the end of repositories:
+
+```groovy
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
+}
+```
+
+**Step 2.** Add the dependency
+
+```groovy
+dependencies {
+    implementation 'com.salvadormontiel:dotenv:0.0.2'
+}
+```
 
 ## Usage
 
